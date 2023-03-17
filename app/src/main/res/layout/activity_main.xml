@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/thermometer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="16sp"
+        android:textColorHint="@color/black"
+        android:hint="@string/temperature_fahrenheit"/>
+    <EditText
+        android:id="@+id/fahrenheit_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="16sp"
+        android:maxLength="8"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="@string/write_temperature"/>
+    <TextView
+        android:id="@+id/celsius_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_margin="16sp"/>
+
+    <Button
+        android:id="@+id/btn_Convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="16sp"
+        android:hint="@string/button_convert"
+        android:textColorHint="@color/white"/>
+
+</LinearLayout>
